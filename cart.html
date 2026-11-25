@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CampusBite | Shopping Cart</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="cart">
+  <header id="siteHeader" class="header"></header>
+  <main class="page subpage">
+    <div class="page-intro"><div><span class="kicker">REVIEW YOUR MEAL</span><h1>Your shopping cart.</h1><p>Adjust quantities and check your bill before checkout.</p></div><a class="outline-button" href="menu.html">Continue browsing</a></div>
+    <div class="stage-bar"><span>✓ Menu</span><span class="current">Cart</span><span>Checkout</span></div>
+    <div class="workspace checkout-workspace">
+      <section class="content-panel"><div class="panel-heading"><h2>Selected items <span id="cartBadge" class="count-pill">0</span></h2><button class="text-button" id="clearCart">Clear cart</button></div><div class="cart-list" id="cartItems" aria-live="polite"></div></section>
+      <aside class="cart-panel bill-panel"><div class="cart-heading"><div><h2>Order summary</h2><p>All amounts in Indian rupees.</p></div></div><div class="bill"><div><span>Subtotal</span><strong id="subtotal">₹0.00</strong></div><div><span>Tax (5%, demo)</span><strong id="tax">₹0.00</strong></div><div class="total"><span>Final bill</span><strong id="total">₹0.00</strong></div></div><button class="primary checkout" id="proceedCheckout" disabled>Proceed to checkout</button><div class="secure-note">No online payment required</div></aside>
+    </div>
+  </main><footer id="siteFooter"></footer><div id="toast" class="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+</body></html>

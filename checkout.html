@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CampusBite | Checkout</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="checkout">
+  <header id="siteHeader" class="header"></header>
+  <main class="page subpage">
+    <div class="page-intro"><div><span class="kicker">ONE LAST STEP</span><h1>Schedule your pickup.</h1><p>Choose a break that works with your class timetable.</p></div><a class="outline-button" href="cart.html">Edit cart</a></div>
+    <div class="stage-bar"><span>✓ Menu</span><span>✓ Cart</span><span class="current">Checkout</span></div>
+    <div id="checkoutEmpty" class="content-panel empty-state" hidden><span>🛍️</span><h2>There's nothing to check out.</h2><p>Pick something delicious before scheduling a pickup.</p><a href="menu.html" class="primary">Browse menu</a></div>
+    <div class="workspace checkout-workspace" id="checkoutContent">
+      <section class="content-panel"><div class="panel-heading"><h2>Pickup details</h2></div><p class="panel-description">Select an available demo slot at your campus cafeteria.</p><div class="pickup pickup-large"><div class="pickup-title"><span>◷</span><div><strong>Pickup time slot</strong><small>Choose a convenient break</small></div></div><div class="slot-grid" id="pickupSlots" role="group" aria-label="Pickup time slots"></div><small id="pickupHint">Select a slot to place your order.</small></div><div class="payment-method"><span class="payment-icon">₹</span><div><h3>Pay at counter</h3><p>Collect your order using its ID and pay at the cafeteria. No payment is collected online.</p></div><span class="selected-dot">✓</span></div></section>
+      <aside class="cart-panel bill-panel"><div class="cart-heading"><div><h2>Order summary</h2><p>Check everything before confirming.</p></div></div><div id="basketPreview" class="basket-preview"></div><div class="bill"><div><span>Subtotal</span><strong id="subtotal">₹0.00</strong></div><div><span>Tax (5%, demo)</span><strong id="tax">₹0.00</strong></div><div class="total"><span>Total to pay</span><strong id="total">₹0.00</strong></div></div><button class="primary checkout" id="checkout" disabled>Place pickup order</button><div class="secure-note">Demo order · Pay at counter</div></aside>
+    </div>
+    <section id="confirmation" class="content-panel confirmation" hidden><span class="success-circle">✓</span><h2>Order placed!</h2><p>Your demo order has been saved. Collect your food with this order ID during the selected slot.</p><div class="receipt" id="receipt"></div><div class="confirmation-actions"><a class="primary" href="orders.html">View my orders</a><a class="outline-button" href="menu.html">Back to menu</a></div></section>
+  </main><footer id="siteFooter"></footer><div id="toast" class="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+</body></html>

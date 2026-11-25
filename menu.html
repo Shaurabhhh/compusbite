@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CampusBite | Daily Menu</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="menu">
+  <header id="siteHeader" class="header"></header>
+  <main class="page subpage">
+    <div class="page-intro"><div><span class="kicker">THE DAILY SPECIAL</span><h1>Explore the menu.</h1><p>Freshly prepared campus favourites for every kind of break.</p></div><span class="date-pill" id="today"></span></div>
+    <div class="workspace menu-workspace">
+      <section class="menu-section" aria-label="Daily menu">
+        <!-- Interactive menu filters and food cards -->
+        <div class="category-tabs" id="categories" aria-label="Food categories"></div>
+        <div class="filter-row"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search dishes..." aria-label="Search menu"></label><label class="veg-toggle"><input type="checkbox" id="vegOnly"><span class="toggle-track"></span><span>Veg only</span></label><label class="available-toggle"><input type="checkbox" id="availableOnly"> In stock</label></div>
+        <div class="results"><span id="resultCount"></span><span>Prices in INR</span></div><div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+      </section>
+      <aside class="cart-panel menu-side"><div class="cart-heading"><div><h2>Your basket <span id="cartBadge">0</span></h2><p>Review your selections on the cart page.</p></div></div><div id="basketPreview" class="basket-preview"></div><div class="bill"><div class="total"><span>Cart subtotal</span><strong id="subtotal">₹0.00</strong></div></div><a class="primary checkout" href="cart.html">View cart</a><div class="secure-note">Add dishes to get started</div></aside>
+    </div>
+  </main><footer id="siteFooter"></footer><div id="toast" class="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+</body></html>
